@@ -28,7 +28,7 @@ public class TestDemo {
 	request.setAttribute("citylist", citylist);
 	ReturnMessage = "OK";
 	}else {
-	ReturnMessage = "未找到信息";
+	ReturnMessage = "msg fail";
 	}
 	Map<String,Object> ReturnMAP = new HashMap<String,Object>();
 	ReturnMAP.put("citylist", citylist);
