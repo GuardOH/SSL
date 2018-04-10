@@ -30,7 +30,6 @@ public class ProController {
 	@RequestMapping("clist")
 	public String getAll(ModelMap model) {
 		List<Province> list = proService.getList();
-		//将值写回jsp中
 		model.put("list", list);
 		return "pro";
 	}
