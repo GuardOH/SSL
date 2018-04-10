@@ -23,7 +23,6 @@ public class TestDemo {
 	public Map<String,Object> faultType(int id,HttpServletRequest request)throws IOException
 	{
 	String ReturnMessage = "";
-	//获取所有子类故障类型
 	List<City> citylist = cityService.getCityAll(id);
 	if(citylist.size()>0){
 	request.setAttribute("citylist", citylist);
@@ -31,9 +30,6 @@ public class TestDemo {
 	}else {
 	ReturnMessage = "未找到信息";
 	}
-	 
-	 
-	//*************************************************************
 	Map<String,Object> ReturnMAP = new HashMap<String,Object>();
 	ReturnMAP.put("citylist", citylist);
 	return ReturnMAP;
